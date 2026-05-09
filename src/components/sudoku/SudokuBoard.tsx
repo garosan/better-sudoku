@@ -13,7 +13,7 @@ export function SudokuBoard({
   onCellClick,
 }: SudokuBoardProps) {
   return (
-    <div className="grid grid-cols-9 border-2 border-foreground/30 rounded-sm w-full max-w-sm mx-auto 2xl:max-w-lg">
+    <div className="grid grid-cols-9 border-2 border-foreground/30 rounded-sm w-full max-w-sm mx-auto 2xl:max-w-md">
       {board.map((row, ri) =>
         row.map((cell, ci) => (
           <SudokuCell
