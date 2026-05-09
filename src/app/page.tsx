@@ -37,8 +37,8 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <nav className="flex items-center justify-center py-4 border-b border-border">
-        <h1 className="text-xl font-semibold tracking-tight">Better Sudoku</h1>
+      <nav className="flex items-center justify-center py-4">
+        <h1 className="text-3xl font-semibold tracking-tight">Better Sudoku</h1>
       </nav>
 
       <main className="flex flex-col items-center justify-center flex-1 px-4 py-6 gap-4">
@@ -62,6 +62,7 @@ export default function Home() {
 
           <div className="w-full lg:w-64 flex items-center">
             <SudokuControls
+              board={board}
               onNumber={enterNumber}
               onErase={eraseCell}
               onNewGame={() => newGame(difficulty)}
